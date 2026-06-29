@@ -38,3 +38,47 @@ body {
         opacity: 0;
     }
 }
+
+/* Botão Sentry Base */
+.btn-sentry {
+    position: relative;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 8px;
+    font-family: var(--font-cyber);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--transition-fluid);
+    text-transform: uppercase;
+}
+
+/* Botão Neon Primary */
+.btn-neon-primary {
+    background: linear-gradient(135deg, var(--neon-blue), #00D9FF);
+    color: var(--bg-main);
+    border: 2px solid var(--neon-blue);
+    box-shadow: 0 0 10px var(--neon-blue-glow), 
+                inset 0 0 10px var(--neon-blue-glow);
+}
+
+.btn-neon-primary:hover {
+    box-shadow: 0 0 20px var(--neon-blue-glow),
+                0 0 40px var(--neon-blue-glow),
+                inset 0 0 20px var(--neon-blue-glow);
+    transform: translateY(-2px);
+}
+
+.btn-neon-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 0 15px var(--neon-blue-glow),
+                inset 0 0 15px var(--neon-blue-glow);
+}
+
+.btn-text {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
