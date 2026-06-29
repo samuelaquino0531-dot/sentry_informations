@@ -129,3 +129,47 @@ body {
     box-shadow: 0 0 10px var(--neon-blue-glow);
     transform: translateY(-1px);
 }
+
+/* Tab Container */
+.tab-container {
+    display: flex;
+    background: rgba(28, 29, 36, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.05);
+    width: fit-content;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition-fluid);
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+}
+
+.tab-btn.active {
+    color: var(--neon-blue);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background: var(--neon-blue);
+    box-shadow: 0 0 8px var(--neon-blue);
+    border-radius: 2px;
+}
